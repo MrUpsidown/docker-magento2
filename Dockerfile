@@ -1,4 +1,4 @@
-FROM alexcheng/magento2
+FROM alexcheng/magento2:integrator
 
 MAINTAINER A. Marquis <mrupsidown@gmail.com>
 
