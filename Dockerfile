@@ -55,3 +55,6 @@ RUN apt-get install -y bzip2
 
 # Install Grunt
 RUN npm install -g grunt-cli
+
+# Make everything available to all users
+RUN n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; cp -r $n/{bin,lib,share} /usr/local
